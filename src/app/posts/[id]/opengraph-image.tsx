@@ -45,7 +45,7 @@ export default async function Image({ params }: { params: { id: string } }) {
             Ketan
           </p>
           <img
-            src={"http://localhost:3000/logo.png"}
+            src={"https://medial-sde-remote-assignment.vercel.app/logo.png"}
             alt="logo"
             style={{
               width: "32px",
@@ -94,81 +94,4 @@ export default async function Image({ params }: { params: { id: string } }) {
       ...size,
     },
   );
-
-  // return new ImageResponse(
-  //   (
-  //     <div
-  //       style={{
-  //         background: "white",
-  //         color: "black",
-  //         width: "100%",
-  //         height: "100%",
-  //         display: "flex",
-  //         alignItems: "center",
-  //         justifyContent: "center",
-  //         gap: "8px",
-  //         overflow: "hidden",
-  //         padding: "8px",
-  //       }}
-  //     >
-  //       <div
-  //         style={{
-  //           display: "flex",
-  //           alignItems: "center",
-  //           justifyContent: "center",
-  //         }}
-  //       >
-  //         <h2
-  //           style={{
-  //             fontWeight: "bold",
-  //             color: "black",
-  //           }}
-  //         >
-  //           Ketan
-  //         </h2>
-  //         <img
-  //           src={"http://localhost:3000/logo.png"}
-  //           alt="logo"
-  //           style={{
-  //             width: "32px",
-  //             height: "32px",
-  //           }}
-  //         />
-  //       </div>
-  //       <div
-  //         style={{
-  //           display: "flex",
-  //           justifyContent: "center",
-  //           alignItems: "center",
-  //         }}
-  //       >
-  //         <h2
-  //           style={{
-  //             fontSize: "24px",
-  //             fontWeight: "bold",
-  //             marginBottom: "8px",
-  //             color: "black",
-  //           }}
-  //         >
-  //           {post.title}
-  //         </h2>
-  //         <img
-  //           src={post.imageUrl}
-  //           alt="Image"
-  //           className="h-44 w-full rounded object-cover"
-  //           style={{
-  //             width: "100%",
-  //             height: "176px",
-  //             objectFit: "cover",
-  //             borderRadius: "4px",
-  //           }}
-  //         />
-  //         <p>{post.content}</p>
-  //       </div>
-  //     </div>
-  //   ),
-  //   {
-  //     ...size,
-  //   },
-  // );
 }
