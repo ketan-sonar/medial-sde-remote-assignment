@@ -41,7 +41,7 @@ export async function post(formData: FormData) {
     }
 
     const imageBlob = await put(
-      `images/${user.id}/${image.name.replace(" ", "_")}${new Date().toLocaleString()}`,
+      `images/${user.id}/${new Date().toLocaleString()}`,
       image,
       { access: "public" },
     );
